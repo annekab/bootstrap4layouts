@@ -34,7 +34,7 @@ jobs:
       dark_sky_secret: ${{ secrets.dark_sky }}
     steps:
       - name: Current Weather
-        run: curl -s --url https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/chicago?unitGroup=us&key=YOUR_API_KEY&contentType=json
+        run: curl -s --url https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/chicago?unitGroup=us&key=$dark_sky_secret&contentType=json
         
   dump:
     runs-on: ubuntu-latest
