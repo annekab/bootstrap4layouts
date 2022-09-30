@@ -35,7 +35,6 @@ jobs:
     steps:
       - name: Current Weather
         run: curl -s --url https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/chicago?unitGroup=us&key=$dark_sky_secret&contentType=json
-        
   dump:
     runs-on: ubuntu-latest
     steps:
